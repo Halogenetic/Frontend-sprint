@@ -4,7 +4,6 @@ let sco = 0
 
 const startGame = () => {
     let randomnbr = Math.floor(Math.random() * 12)
-    console.log(randomnbr)
     let moles = document.getElementsByClassName("mole")
     moles[randomnbr].style.visibility = "visible";
     stopi = setTimeout(startGame, seconds)

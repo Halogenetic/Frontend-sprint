@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    background-color: #EAEAEA;
+}
+
+.horloge {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.date {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jour {
+    height: 20%;
+    font-size: 60px;
+    background-color: #B03737;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 80px 80px 0 0;
+    box-shadow: 5px 5px 5px #D3D3D3;
+}
+
+.mois {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    background-color: white;
+    color:  #909090;
+    width: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 5px #D3D3D3;
+}
+
+.annee {
+    height: 20%;
+    font-size: 60px;
+    background-color: #B03737;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 0 0 80px 80px;
+    box-shadow: 5px 5px 5px #D3D3D3;
+}
+
+
+
+.heure {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 130px;
+    color: #474747;
+    cursor: pointer;
+}
+
+.seconds {
+    font-size: 80px;
+    padding-top: 30px;
+}
+

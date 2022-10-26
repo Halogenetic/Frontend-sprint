@@ -19,4 +19,7 @@ As part of the BeCode Brussels 2022/2023 training
 - element.slice()
 - document.body.innerHTML = ''
 - clearInterval
+- new Date()
+- .getTime()
+- .toLocaleString()
 
