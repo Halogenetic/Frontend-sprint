@@ -25,10 +25,10 @@ button {
 }
 
 .viewer {
-    background-image: url(./images/guaca.jpg);
+    background-image: '';
     background-repeat: no-repeat;
     background-size: cover;
-    background: none;
+
 }
 
 .game {
