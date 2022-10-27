@@ -8,18 +8,21 @@ hoursy = document.querySelector(".hours");
 minutesy = document.querySelector(".minutes");
 secondsy = document.querySelector(".seconds");
 
-var am = 0
+let am = 0
 
 heure = document.querySelector(".heure");
+let today = new Date();
+
+let hoursz = today.getHours();
 
 const refresh = () => {
-    
-    const today = new Date();
+    console.log("test")
 
+    today = new Date()
     const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
     const dayz = days[today.getDay()];
 
-    var datez = today.getDate();
+    let datez = today.getDate();
 
     if (datez < 10) {
         datez = "0" + datez
@@ -30,15 +33,15 @@ const refresh = () => {
 
     const yearz = today.getFullYear();
 
-    var hoursz = today.getHours();
+    
 
-    var minutesz = today.getMinutes();
+    let minutesz = today.getMinutes();
 
     if (minutesz < 10) {
         minutesz = "0" + minutesz
     }
 
-    var secondsz = today.getSeconds();
+    let secondsz = today.getSeconds();
 
     if (secondsz < 10) {
         secondsz = "0" + secondsz
@@ -56,11 +59,8 @@ const refresh = () => {
     setTimeout(refresh, 1000);
 }
 
-refresh();
 
-
-
-heure.addEventListener('click', format = () => {
+heure.addEventListener('click', () => {
     if (hoursz > 11 && am == 0) {
         hoursz = (hoursz - 12)
         am = 1
@@ -71,3 +71,5 @@ heure.addEventListener('click', format = () => {
         am = 0
     }
 })
+
+refresh();

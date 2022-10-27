@@ -28,7 +28,7 @@ const today = new Date();
 const Difference_In_Time = today.getTime() - thedate.getTime();
   
 // To calculate the no. of days between two dates
-const Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+const Difference_In_Days = (Math.trunc(Difference_In_Time / (1000 * 3600 * 24)));
   
 //To display the final no. of days (result)
 document.write("<br> Total number of days between dates  <br>"
@@ -39,7 +39,7 @@ document.write("<br> Total number of days between dates  <br>"
 
 const daysDifference = (thedate, today) => {
     const Difference_In_Time = today.getTime() - thedate.getTime();
-    const Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+    const Difference_In_Days = (Math.trunc(Difference_In_Time / (1000 * 3600 * 24)));
     document.write("<br> <br> Total number of days between dates  <br>"
                + thedate + " and <br>" 
                + today + " is: <br> " 
