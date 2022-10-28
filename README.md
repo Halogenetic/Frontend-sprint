@@ -22,4 +22,5 @@ As part of the BeCode Brussels 2022/2023 training
 - new Date()
 - .getTime()
 - .toLocaleString()
+- getDay, getDate, getMonth, getFullYear, getHours, getMinutes, getSeconds
 
