@@ -1,15 +1,21 @@
 const myinput = document.querySelector('.tryname');
 const mybutton = document.querySelector('button');
 const mybody = document.querySelector('body');
-
+const myselect = document.querySelector('select');
 
 
 
 mybutton.addEventListener('click', () => {
   let myname = myinput.value
-  fetch('https://api.agify.io/?name=' + myname)
+  let mycountry = myselect.value
+  let fetcho
 
-      .then(response => {return response.json()})
+if (mycountry != "") 
+  fetcho = fetch('https://api.agify.io/?name=' + myname + "&country_id=" + mycountry)
+  else 
+    fetcho = fetch('https://api.agify.io/?name=' + myname)
+
+      fetcho.then(response => {return response.json()})
       .then(data => {
         const newdiv = document.createElement("div")
         mybody.appendChild(newdiv)
